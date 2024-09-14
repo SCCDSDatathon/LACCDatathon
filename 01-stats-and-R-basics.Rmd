@@ -1,0 +1,782 @@
+---
+title: 'Coding Session 1: Coding, Stats, and R Basics'
+author: "Cal Poly Pomona Datathon  --  Southern California Consortium for Data Science"
+date: "Saturday April 27 2024"
+output:
+  pdf_document: default
+  html_document:
+    df_print: kable
+---
+
+
+
+\renewcommand{\P}{\mathds{P}}
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(out.width="70%", out.height="60%", fig.align="center", warning=FALSE, message=FALSE)
+
+```
+
+
+
+# 1. Basics
+
+In this section, you will learn the basics of ``R``.  
+
+To follow along, you should type the code that appears in each box to ensure you are getting the intended result.
+
+1. When you encounter a "**Challenge**", this is a task you should solve with your group using critical thinking.  
+2. In this first part, whenever you see a box of code, you should also type out that code and run it to verify the output.  We all need to learn the basics.
+3. When we get to part 2 (*Data Frames*), it is okay to focus more on the challenges and read code and the output.  However, you should still type out any code that feels "brand new."  Physically typing out the code helps more than you might think.
+
+Don't be afraid to ask for help at any point during the datathon!  Raise your hand and a volunteer will come help right away.
+
+## 1.1 ``R`` is a calculator
+
+What is $2+2$?  ``R`` can do this for us in three different ways.
+
+### Method 1
+
+Input ``2+2`` into the **console** and press ``ENTER`` to obtain ``4``.
+
+```{r}
+2+2
+```
+
+### Method 2
+
+Try doing it from the script by following these steps:
+
+1. Input ``2+2`` into the **script** file.
+2. Pressing ``CTRL+ENTER``.  *(``CMD+ENTER`` on a mac.)* 
+
+Now, look at the console and you will notice that the code "gets run" in the console.
+
+### Method 3
+
+* Go back to the line for ``2+2`` in the script file, and click the ``RUN`` button.
+
+### Using Comments
+
+Lines that start with a # are called *comments* and is not run.  They are useful for making notes to yourself or to explain complex code.
+
+Type each of these two lines into the script file and run them one-by-one.
+
+```{r}
+# Multiply 2 by 3 and then add 7
+2*3 + 7
+```
+
+You do not need to type out the comments in this next example, but you should read them and run the code.
+
+```{r}
+# Calculate the average of four numbers.
+# First, we sum the numbers using parentheses, then divide by the count.
+(2 + 7 + 3 + 2) / 4
+```
+
+In what follows, you do not necessarily need to type out all of the comments.  However, it is considered "good coding practice" to add comments to your code.  *(Can you think of a couple of reasons as to why?)*
+
+## 1.2 Workflow Tips
+
+* Think of the ``script`` as a whiteboard.  You can adjust it as you need to.  
+* The ``console`` can be used to run quick commands directly
+
+What if the ``7`` is instead a ``9``?  
+
+Instead of typing out this code, go back and adjust ``(2 + 7 + 3 + 2) / 4)`` in the script.  Then use ``CTRL + ENTER`` to run it.
+
+```{r}
+(2 + 9 + 3 + 2) / 4
+```
+
+You can also *recycle* commands with the console:  
+
+* Click anywhere in the console, and press the ``up arrow`` on the keyboard.  Keep pressing it and cycle through to see the commands you have ran.
+* Click on the ``"History"`` tab in the upper right as another way to see previous commands.  (*Make sure to click back to ``"Environment"``...we will be using it soon*)
+* You can highlight multiple lines of code and run them at once.  Right now, highlight all of your code and run it.  Your resulting console should give output like this:
+
+```{r}
+2+2
+# Multiply 2 by 3 and then add 7
+2*3 + 7
+# Calculate the average of four numbers.
+# First, we sum the numbers using parentheses, then divide by the count.
+(2 + 9 + 3 + 2) / 4
+```
+
+
+### White Space
+
+* White space (empty lines) do not affect code.  It is encouraged to make code more readable.  
+* Instead a script with no spaces, something like this is preferable:
+
+```{r, eval = FALSE}
+2+2
+
+# Multiply 2 by 3 and then add 7
+2*3 + 7
+
+# Calculate the average of four numbers.
+# First, we sum the numbers using parentheses, then divide by the count.
+(2 + 9 + 3 + 2) / 4
+```
+
+
+## 1.2 Using Functions
+
+``R`` includes functions for other types of math
+
+```{r}
+# using a function: rounding numbers
+round(3.14)
+```
+
+An *argument* is an *input* to a function.  Functions can take in many arguments:
+
+```{r}
+# using a function with more arguments
+round(3.14, digits = 1)
+```
+
+
+### Note on ``R`` Syntax
+
+Here are three ways to do the same thing.  Can you see why this happens?
+
+```{r}
+# Method 1
+round(3.14, digits = 1)
+
+# Method 2
+round(3.14,
+      digits = 1)
+
+# Method 3
+round(3.14,
+      digits = 1
+)
+```
+
+``R`` reads from left to right, line by line.  If it does not see the end of a statement, then it will keep going onto the next line.
+
+### Challenge 1
+
+What do you think this code will produce?  Predict the answer yourself before running it.
+
+```{r, eval = FALSE}
+100 +
+  30 +
+  7
+```
+
+### Syntax Warning
+
+```{r, eval = FALSE}
+# Correct syntax
+round(3.14,
+  digits = 1)
+
+# Incorrect syntax: This will cause an error because the statement is not complete without ")"
+round(3.14,
+  digits = 1
+
+# Incorrect syntax: This will cause an error because R is case sensitive.
+Round(3.14, 
+  digits = 1)
+```
+
+
+
+## 1.3 Assigning Objects
+
+```{r}
+# assigning value to an object
+weight_kg <- 55
+```
+
+Now, look in the upper right and you will see ``weight_kg`` in the ``environment``.  This means we can use it in various ways:
+
+```{r}
+# recall object
+weight_kg
+
+
+# multiply an object (convert kg to lb)
+2.2 * weight_kg
+
+
+# assign converted weight in lbs
+weight_lb <- 2.2 * weight_kg
+
+
+# reassign new value to an object
+weight_kg <- 100
+```
+
+After running the last code, notice that ``weight_kg`` changed in the environment panel.  
+
+### CAUTION:
+
+Reminder: ``R`` is case sensitive.  So it will treat ``weight_kg``, ``Weight_kg``, and ``WEIGHT_kg`` differently.  (*Try running the command ``Weight_kg``.  What error does it produce?*)
+
+## 1.4 Vectors
+
+In ``R``, a **vector** can be thought of as a list *(usually of numbers)*.  
+
+```{r}
+# assign vector
+ages <- c(16, 18, 20, 22, 24) 
+
+# recall vector
+ages
+```
+
+All sorts of functions can be applied to vectors:
+
+```{r}
+# how many things are in object?
+length(ages)
+```
+
+```{r}
+# average the ages to obtain the mean: (16 + 18 + 20 + 22 + 24) / 5
+mean(ages)  # this is faster than typing out (16 + 18 + 20 + 22 + 24) / 5
+```
+
+```{r}
+# smallest and largest ages
+range(ages)
+```
+
+```{r}
+# what are the ages if everyone becomes 5 years older?
+ages + 5
+
+# what are the ages if everyone is two times as old as they are now?
+ages * 2
+```
+
+### Vectors of Words
+
+Words need to be put in quotation marks.
+
+```{r}
+# vector of foods
+foods <- c("pizza", "spaghetti", "steak")
+
+foods
+
+# It doesn't make sense to take an average of the foods.
+# NA means "Not Available"
+mean(foods)
+```
+
+\newpage
+
+# 2. Data Frames and Statistics Basics
+
+A **data frame** is like a spreadsheet.  They can
+
+1. be created from scratch like we did with ``ages`` (using the  ``data.frame(...)`` command)
+2. imported from a *package* (or, exist in *base ``R``*)
+3. be imported *(excel spreadsheets can be imported!)*
+
+```{r, echo = FALSE}
+knitr::include_graphics("r-data-frame.png")
+```
+
+### Libraries
+
+``libraries`` are separate functions  functions someone else wrote that are not built into R. They need to be installed ahead of time, but we have done that for you.  
+
+Now, load the package ``ggplot2``.  This code needs to be run **once** per ``R`` session.
+
+```{r}
+# Load package.  Gives access to plotting tools and loads "mpg".  
+library(ggplot2)
+
+# Insert mpg into environment
+data(mpg) 
+```
+
+## 2.1 Data Frame Functions (``mpg``)
+
+In ``mpg``,
+
+* each row corresponds to an *observation* (in this case, a car)
+* each column corresponds to a *variable* car characteristic
+* each cell has a value
+
+Here are some things you can use to understand a data frame better:
+
+```{r}
+# get the variable  names
+names(mpg)
+
+# get the number of observations and variables.  dim means dimension
+dim(mpg)
+
+# display the first 10 observations of the dataframe
+head(mpg, 10)
+
+# access a certain variable with a "$"
+mpg$hwy  # highway mpg
+
+# average highway mpg of cars in the dataset
+mean(mpg$hwy)  
+```
+
+```{r, eval = FALSE}
+# view the data frame like an excel spreadsheet
+View(mpg)
+```
+
+You can also use the environment instead of typing ``View(...)``.  Do this now by clicking on ``mpg`` in the environment tab.
+
+### Challenge 2:
+
+Find the average city miles per gallon for a car in the dataset and compare it to the average highway miles per gallon.  Does the result surprise you?
+
+## 2.2 Data Frame Filtering with ``subset`` (``mpg``)
+
+```{r, eval = FALSE}
+# Filtering cars with highway mileage greater than 30
+subset(mpg, hwy > 30)
+
+# Filtering cars that are rear wheel drive
+subset(mpg, drv == "r")
+```
+
+```{r}
+# Average hwy mpg of minivans
+minivans <- subset(mpg, class == "minivan")
+mean(minivans$hwy)
+```
+
+
+## 2.3 Statistics Primer 
+
+### Variable Types
+
+There are two main types of variables
+
+* **Numerical** *(or quantitative)*: Typically numbers; makes sense to add and average them.
+* **Categorical** (*or factor, or qualitative*): Typically things that have names; does not make sense to add or average them.  
+
+```{r}
+# engine size (displacement) is a numeric variable.
+mean(mpg$displ)  # average of engine sizes
+sum(mpg$displ)  # sum of engine sizes
+
+# class, or "type" of car is a categorical variable
+mean(mpg$class)  # this will return an error
+unique(mpg$class)  # gives the unique elements of car type ("levels" or "categories")
+```
+
+### Challenge 3:
+
+1. Give another numerical variable in ``mpg``, and report its average.
+2. Give another categorical variable in ``mpg``, and report its possible categories.
+
+### TECHNICAL NOTE 1:
+
+*(Feel free to run the code in the helper script and skip this part)*
+
+When doing statistics, categorical variables should be stored as *factor* variables, which tells ``R`` that the words are more than just words and will be used for statistics.  The ``Levels`` are the possible categories.  
+
+```{r}
+# foods, as a character
+foods
+
+# foods, as a factor
+factor(foods)
+```
+
+Categorical variables are usually already factor variables in ``R``, but depending on how the data is imported, they may need to be converted.  We need to do this with ``mpg``.
+
+```{r}
+# Approach 1: tedious but straightforward
+# repeat this for each categorical variable
+mpg$manufacturer <- as.factor(mpg$manufacturer)
+# ...
+
+
+# Approach 2: does it automatically, but the code is very complicated.
+# You can find this code in the helper script so you do not have to type it by hand.
+mpg[sapply(mpg, is.character)] <- lapply(mpg[sapply(mpg, is.character)], 
+                                                           as.factor)
+```
+
+
+\newpage
+
+# 3. Plots and Summary Statistics
+
+## 3.1 Basic Plots
+
+### Scatterplots
+
+Scatterplots illustrate a relationship between two numeric variables.
+
+```{r}
+# Most common syntax
+ggplot(mpg) + 
+  geom_point(aes(x = cty, y = hwy))
+```
+
+```{r, eval = FALSE}
+# Alternative syntax, can be too long (examples later)
+ggplot(mpg) + geom_point(aes(x=cty, y = hwy))
+
+
+# Syntax to illustrate each part
+ggplot(mpg) +             # We want to plot "mpg"
+  geom_point(             # Make a "point" plot (scatterplot)
+    aes(x=cty, y = hwy)   # Aesthetically, cty is on x-axis, hwy is on y-axis
+  )
+
+```
+
+``aes(...)`` tells the plot what **aesthetics** you want it to have.  Some examples of things to specify:
+
+* ``x``: variable to put on $x$-axis
+* ``y``: variable to put on $y$-axis
+* ``col``: if you want to add color according to a certain variable
+* ``size``: if you want to change the 
+
+
+
+```{r}
+# Colored by car type
+ggplot(mpg) + 
+  geom_point(aes(x=cty, y = hwy, col = class))
+
+# Adding jitter is useful when data might overlap.
+ggplot(mpg) + 
+  geom_jitter(aes(x=cty, y = hwy, col = class))
+
+# You can also add labels
+ggplot(mpg) + 
+  geom_jitter(aes(x=cty, y = hwy, col = class)) +
+  xlab("City MPG") +
+  ylab("Highway MPG") +
+  ggtitle("Highway MPG vs City MPG Colored by Car Class")
+```
+
+
+
+
+
+### CAUTION:
+
+Use ``geom_point`` unless the data is overlapping (common when the numeric values are forced to be whole numbers).  Only use ``jitter`` when needed *(otherwise the data is slightly misrepresented*).  
+
+### Challenge 4:
+
+Answer a couple of questions based on the plot just created.
+
+* What pattern do you notice between city and highway MPG?  In particular, suppose that you know a car has a relatively high city MPG.  What is likely about its highway MPG?
+* What class of cars tend to have the lowest MPG (in general)?
+* What class of cars tend to have the highest MPG (in general)?
+
+
+## 3.2 Five Number Summaries
+
+A five number summary (and mean) helps summarize numeric variables.  It is best motivated by looking at the data a certain way.  Let's represent each mpg as a point on a plot.
+
+
+
+```{r, echo = FALSE, out.height="100%", out.width="100%"}
+library(dplyr)
+library(ggplot2)
+
+# 1. Take dotplot_df to be mpg$hwy, and sort by hwy
+dotplot_df <- mpg %>%
+  select(hwy) %>%
+  arrange(hwy) %>%
+  mutate(
+    # 2. Assign color based on quartile positions
+    Color = case_when(
+      row_number() <= 59 ~ "red",          # First 25%
+      row_number() >= 60 & row_number() <= 118 ~ "blue",  # Second 25%
+      row_number() >= 119 & row_number() <= 176 ~ "green",  # Third 25%
+      row_number() >= 177 ~ "purple"       # Fourth 25%
+    ),
+    shape = case_when(
+      row_number() <= 59 ~ "21",          # First 25%
+      row_number() >= 60 & row_number() <= 118 ~ "22",  # Second 25%
+      row_number() >= 119 & row_number() <= 176 ~ "23",  # Third 25%
+      row_number() >= 177 ~ "24"  # Fourth 25%
+    )    
+  )
+
+# 3. Add a "frequency" column
+dotplot_df <- dotplot_df %>%
+  group_by(hwy) %>%
+  mutate(Frequency = row_number()) %>%
+  ungroup()
+
+# Calculate the mean of 'hwy'
+mean_hwy <- mean(mpg$hwy)
+
+# Create a data frame for tick marks
+ticks_df <- data.frame(x = 12:44, y = rep(1, 33))  # Base of ticks at y = 1
+
+# Create the dot plot with specified modifications
+dot_plot <- ggplot(dotplot_df, aes(x = hwy, y = Frequency + 1.2, color = Color)) +  # Shift frequency up by 1
+  geom_point(size = 2.5, aes(fill = Color, shape = shape)) +  # Using different shapes and larger size
+  geom_segment(aes(x = mean_hwy, xend = mean_hwy, y = -3, yend = 0.25),  # Red arrow from y=0 to y=1
+               color = "red", size = 3, 
+               arrow = arrow(length = unit(0.2, "cm"), ends = "last", type = "open")) +
+  geom_hline(yintercept = 1, color = "black", size = 1.5) +  # Black base line at y=1
+  scale_x_continuous(breaks = seq(12, 44, by = 1), 
+                     labels = function(x) ifelse(x %in% seq(15, 40, by = 5), x, "")) +  # Labels only at specific points
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1))) +  # Adjust y-axis to show the base line better
+  scale_color_manual(values = c("red" = "darkgrey", "blue" = "#377EB8", "green" = "#4DAF4A", "purple" = "#984EA3")) +
+  theme_minimal() +
+  theme(axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        panel.grid.major = element_blank(),  # Remove major grid lines
+        panel.grid.minor = element_blank(),  # Remove minor grid lines
+        legend.title = element_blank()) +
+    labs(
+    x = "Highway MPG",
+    y = NULL,  # Leaving y-axis label blank
+    title = "Dot Plot of Highway MPG Frequencies"
+  ) + theme(legend.position = "none") +
+  geom_segment(data = ticks_df, aes(x = x, xend = x, y = 0.6, yend = 1.4), size = 0.7, color = "black")
+
+
+# Print the plot
+print(dot_plot)
+```
+
+
+```{r}
+summary(mpg$hwy)
+```
+
+* The **minimum** (``Min.``) highway mpg is 12.  This represents the lowest data point in the dataset.
+* The **maximum** (``Max.``) highway mpg is 44.  This is the highest value observed in the dataset.
+* The **mean** (``Mean``) highway mpg is 23.44.  This is indicated by the arrow on the plot and can be thought of as the *center of balance*.
+  * If the red arrow was moved to the left, then the right side would tip over.  If it was moved to the right, then the left side would tip over.
+* The **median** (``Median``, 24), **first quartile** (``1st Qu.``, 18) **third quartile** (``3rd Qu.``, 27) divide the data into **quarters** (or, fourths).
+  * The circles are the smallest.
+  * The triangles are the next smallest.
+  * The squares are the next.
+  * The plus's are next *(so, they are the largest quarter of the data!)*
+
+Another way to think about it:
+
+* 25% of the data is at or below ``1st Qu.``
+* 50% of the data is at or below ``Median``  *(so, half of the data is at or below the median, and the other half is above.)*
+* 75% of the data is at or below ``3rd Qu.``
+
+(*Note: the five number summary is ``Min``, ``1st Qu.``, ``Median``, ``3rd Qu.``, and ``Max``.  The mean is not considered as part of the "five number summary".*)
+
+### Boxplot
+
+The five number summary is also expressed as a boxplot:
+
+```{r}
+# Single Boxplot
+ggplot(mpg) + 
+  geom_boxplot(aes(y = hwy)) +   # boxplot with y axis as highway mpg
+  scale_x_discrete()             # optional, but makes it look better
+```
+
+Look at the $y$-axis (``hwy``) and note that it matches the five number summary.
+
+The dots represent **outliers** and are extreme values.
+
+### Boxplot separated by categorical variable
+
+```{r}
+# Separate hwy by vehicle class
+ggplot(mpg) + 
+  geom_boxplot(aes(y = hwy, x = class)) 
+
+# Add color (fill in the boxplot)
+ggplot(mpg) + 
+  geom_boxplot(aes(y = hwy, x = class, fill = class)) 
+```
+
+## 3.3 Summarizing an entire dataset
+
+``summary(mpg)`` gives some summary statistics for each column of the data frame ``mpg``.  
+
+* Numeric variables: five number summary and mean
+* Categorical variables: reports the *count* or *frequency* of occurrences of each type
+
+```{r}
+# Basic summary of each column
+summary(mpg)
+```
+
+For example, there are 62 SUV's in the dataset and 11 minivans, and the average city mpg is 16.86.
+
+```{r}
+# Summary statistics for minivans.  
+#   Remember we defined "minivans" earlier?  Look in your environment!
+summary(minivans)
+```
+
+### Other Summary Statistics
+
+```{r}
+# Table of counts separated by two categorical variables
+table(mpg$class, mpg$drv)
+```
+
+For example, there are 12 compacts with 4 wheel drive, and all minivans (11) have front wheel drive.
+
+## 3.4 Other Plotting Tools
+
+### Histograms
+
+**Histograms** are useful for numeric variables that can take **decimal values** *(decimal valued variables are called "continuous".  Whole number valued are called "discrete")*.  
+
+They "bin" the data into ranges.
+
+```{r}
+# Using 7 bins
+ggplot(mpg) + 
+  geom_histogram(aes(x = displ), bins = 7, col = "black") +  
+  xlab("Engine Size (Litres)")
+```
+
+So there are roughly...
+
+* 49 engines with a size between (approximately) 1.4 to 2.3, (first "bin" or rectangle) 
+* 65 engines with a size between (approximately) 2.3 to 3.2, (first "bin" or rectangle)
+* 49 engines with a size between (approximately) 3.2 to 4.1, (first "bin" or rectangle) 
+
+and so forth.
+
+Histograms are helpful to describe the **general shape** (a **visual summary**) of a numeric variable.  So we can see that the number of engines with large sizes are very small, and that number decreases very quickly.  The majority of engines are around the 1 to 4 litre range.
+
+You can change the number of bins that get used, but it will change the way the results are displayed.
+
+* Use too few bins, and the data gets "over-summarized".
+* Use too many bins, and the results are too fine.  It is hard to come up with general conclusions of the data.
+
+```{r}
+# 4 bins, over-summarized
+ggplot(mpg) + 
+  geom_histogram(aes(x = displ), bins = 4, col = "black") +  
+  xlab("Engine Size (Litres)")
+
+# 30 bins, does not give good summary
+ggplot(mpg) + 
+  geom_histogram(aes(x = displ), bins = 30, col = "black") +  
+  xlab("Engine Size (Litres)")
+
+# 9 bins, does a pretty good job
+ggplot(mpg) + 
+  geom_histogram(aes(x = displ), bins = 9, col = "black") +  
+  xlab("Engine Size (Litres)")
+```
+
+
+Here we can see the data **"tails off"** to the right, and the majority is around 2 and 3 size engines.
+
+
+### Faceting
+
+**Faceting** is useful to display plots broken up by categorical variables.
+
+```{r}
+# No Facet
+ggplot(mpg) + geom_point(aes(x=displ, y = hwy))
+
+# Facet by type
+ggplot(mpg) + 
+  geom_point(aes(x=displ, y = hwy)) +
+  facet_wrap(~class)
+
+# Add color
+ggplot(mpg) + 
+  geom_point(aes(x=displ, y = hwy, color = class)) +
+  facet_wrap(~class)
+```
+
+You can also add color without faceting, but it can be hard to tell what is going on when there are many categories.
+
+```{r}
+ggplot(mpg) + geom_point(aes(x=displ, y = hwy, col = class))
+```
+
+
+### Challenge 5
+
+Use the faceted scatterplot to determine what classes of cars have the best highway mpg.  What can we say about the engine sizes of those cars?
+
+Now, try to answer the same question with the last scatterplot made (with color but without faceting).  (*It should be a harder question to answer...*)
+
+
+### Some additional examples
+
+```{r}
+ggplot(mpg) + geom_histogram(aes(x = hwy, fill = class), color = "black", bins = 14) + facet_wrap(~class)
+```
+
+
+```{r}
+# This is a good proof of concept, but produces some boxplots with too small
+#   of sample sizes to get a good summary of.
+ggplot(mpg) + geom_boxplot(aes(y = cty, x = drv, fill = class))
+```
+
+## 3.5 Correlation
+
+The **correlation** is a summary statistic between two numeric variables is a number between $-1$ and $1$ that says how much one linearly affects the other (*meaning if you tried to draw a line to "fit" the data*).
+
+```{r}
+cor(mpg$hwy, mpg$cty)
+```
+
+Some rules of thumb can be
+
+* If correlation is greater than 0.7, the data is strongly correlated.  If the $x$ variable increases, we expect the $y$ variable to increase as well.
+* If correlation is between 0.3 and 0.5.  If the $x$ variable increases, the $y$ variable tends to increase *(but less likely to do so than in the strong case)*
+* If the correlation is between 0 and 0.3, the data is hardly correlated.  It means that as $x$ increases, it's tough to expect $y$ to increase as well.
+
+For negative values, we switch one of "increase" to decrease.  For example, if the correlation is -0.8, we would say "as $x$ increases, we expect $y$ to decrease."
+
+### Challenge 6
+
+1. Go back and review the scatterplot of highway mpg and engine size (``displ``) (use the version with no color or faceting).  What tends to happen to highway mpg for larger engine cars?  Smaller?
+2. Now, compute their correlation.  Is its value consistent with the scatterplot?
+
+### WARNING: Correlation vs Causation
+
+Correlation is a value applied to a dataset that already exists.  It does not necessarily mean that there is a *"causal"* relationship, which would happen if someone tried to intervene with the data.  Here is an example:
+
+*"We expect the daily temperature and number of people on the beach to be positively correlated.  We also expect number of shark attacks and daily temperature and to be positively correlated, since higher temperatures mean more people on the beach, so naturally there are more shark attacks.  However, the relationship is not \textbf{causal}.  If we put more sharks in the water, the number of shark attacks will increase, but it will not increase the temperature."*
+
+### Challenge 7
+
+Think of two scenarios:
+
+1. Two variables that are correlated with one another, and there **is** a causal relationship.
+2. Two variables that are correlated with one another, and there **is not** a causal relationship.  *(This happens in the shark attack example.  Think of a new example.)*
+
+
+### Scatterplots with lines of best fit
+
+```{r}
+ggplot(mpg, aes(x=hwy, y = cty)) +
+  geom_jitter() +
+  geom_smooth(method = lm, se = FALSE)
+```
+
+Lines of best fit can be misleading *(and other methods should be used)* when there is not a linear relationship:
+
+```{r}
+ggplot(mpg, aes(x=displ, y = cty)) +
+  geom_jitter() +
+  geom_smooth(method = lm, se = FALSE)
+```
+
+This line is "pretty accurate" but only works for certain parts of the graph.  Notice that it is inappropriate for very large and very small engine sizes.
