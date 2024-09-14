@@ -1,7 +1,7 @@
 ---
 title: 'Coding Session 1: Coding, Stats, and R Basics'
-author: "Cal Poly Pomona Datathon  --  Southern California Consortium for Data Science"
-date: "Saturday April 27 2024"
+author: "Los Angeles City College Datathon  --  Southern California Consortium for Data Science"
+date: "Saturday, November 02, 2024"
 output:
   pdf_document: default
   html_document:
