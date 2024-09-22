@@ -14,13 +14,19 @@
 <br/>
 
 <div align="center">
-    🔭 Our Mathematics Department is currently working on **a Statistical Data Analytics Certificate/Program**.
+    🔭 The Southern California Consortium for Data Science (SCCDS) was established to develop and expand articulated pathways in data science that respond to opportunities in industry, are inclusive of students from a variety of backgrounds–particularly those not historically represented in STEM–and prepare students for success in the ever-widening variety of careers that utilize data science.**.
 
-    This program prepares students to develop predictive models, evaluate the effectiveness of different interventions and strategies, and mitigate risks and anomalies in data. It also equips students with practical skills in data visualization and experience using programming tools such as Python and R. Students will acquire the skills to communicate complex statistical information to a variety of stakeholders effectively, ultimately preparing them for success in the data-driven world.
+    Consortium goals include: 
 
-    Our Certificate under the Mathematics Department consists of only 19 units for completion.
+(1) Creating new Introduction to data science courses at SCCDS-affiliated universities and community colleges that articulate across the Consortium.
 
-    <h4>**Fall - Year One:**</h4>
+(2) Establishing outreach events to promote DS career exploration for students in grades 9-20 (e.g. Datathons, Data Science Careers Days).
+
+(3) Developing and implementing support initiatives for transfer students to ensure success in DS coursework (e.g., summer bridge programs, learning communities). 
+
+(4) In addition, the Consortium will develop and implement professional development to equip faculty to teach DS, especially through incorporation of best practices that are culturally relevant and inclusive, and strategies that are data-informed and promising for closing equity gaps.
+
+    <h4>**Partner Campuses:**</h4>
     <ul>
         <li>
             <strong>Math 217 - Fundamentals of Mathematical Programming</strong> (4 units; UC/CSU)
