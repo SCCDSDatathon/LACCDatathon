@@ -18,6 +18,7 @@
     <p>🙏 Our Partner Campuses</p>
 
     <div align="center">
+        <!-- Updated link for Partner Campuses image -->
         <img src="https://drive.google.com/uc?export=view&id=1jC9mbmqhLZ1zDUfJz8IA_W8NEkGide_n" alt="Partner Campuses" width="500" />
     </div>
 
