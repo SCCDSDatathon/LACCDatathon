@@ -29,7 +29,7 @@
 </div>
 
 <div align="center">
-    <p>🌱 Special Thanks to our Funded Project: California Educational Learning Lab</p>
+    <p>🌱 Special Thanks to our Funded Project: <a href="https://calearninglab.org/project/southern-california-consortium-for-data-science/" target="_blank">California Educational Learning Lab</a></p>
 </div>
 
 <div align="center">
@@ -48,3 +48,4 @@
 <div align="center">
     <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />
 </div>
+
