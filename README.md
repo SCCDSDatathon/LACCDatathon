@@ -14,24 +14,20 @@
 
 <div align="center">
     <p>🔭 The Southern California Consortium for Data Science (SCCDS) was established to develop and expand articulated pathways in data science that respond to opportunities in industry. The consortium aims to be inclusive of students from diverse backgrounds, particularly those historically underrepresented in STEM, and prepare students for success in a variety of data science careers.</p>
+</div>
 
     <p>🙏 Our Partner Campuses</p>
 
     <div align="center">
         <!-- Updated link for Partner Campuses image -->
-        <img src="https://drive.google.com/uc?export=view&id=1jC9mbmqhLZ1zDUfJz8IA_W8NEkGide_n" alt="Partner Campuses" width="500" />
+        <img src="[https://drive.google.com/uc?export=view&id=1jC9mbmqhLZ1zDUfJz8IA_W8NEkGide_n](https://drive.google.com/file/d/1jC9mbmqhLZ1zDUfJz8IA_W8NEkGide_n/view?usp=sharing)" alt="Partner Campuses" width="500" />
     </div>
 
     <p>❗ Information about the Southern California Consortium for Data Science <a href="https://sites.google.com/view/socaldatasci/home">here</a>.</p>
 
-    <p>📢 "Unlock the world of numbers! Follow our Math Department on Instagram for important updates on events, scholarships, fascinating facts, and even math jokes. Join us today and be part of the equation! Visit our <a href="https://www.instagram.com/lacc_math_department/">Instagram profile</a> or scan the QR code below."</p>
-
-    <!-- Fixed the extra space in the QR code link -->
-    <img src="https://drive.google.com/uc?export=view&id=1L3ELl9GdR32vkNmtL7mVLmy_wO8dDQKS" alt="QR Code" width="300" height="300" style="display: block; margin: 10px auto;" />
-
     <p>🌱 Funded Project.</p>
     <div align="center">
-        <img src="https://drive.google.com/uc?export=view&id=15sVHGW2GogW-cGk2I_MbA9f89BY88RgH" alt="Funded Project" width="500" />
+        <img src="[https://drive.google.com/uc?export=view&id=15sVHGW2GogW-cGk2I_MbA9f89BY88RgH](https://drive.google.com/file/d/15sVHGW2GogW-cGk2I_MbA9f89BY88RgH/view?usp=sharing)" alt="Funded Project" width="500" />
     </div>
 </div>
 
