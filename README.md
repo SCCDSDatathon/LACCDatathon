@@ -18,7 +18,7 @@
     <p> 🙏 Our Partner Campuses
 
 <div align="center">
-    <img src="https://drive.google.com/uc?export=view&id=1GWkfaTIrSp0TRjDg9xziLrgPxgqF9O5d"] alt="Mathematics Faculty" width="500" />
+    <img src="https://drive.google.com/file/d/1jC9mbmqhLZ1zDUfJz8IA_W8NEkGide_n/view?usp=sharing" alt="Mathematics Faculty" width="500" />
 </div>
     <p>❗ Information about the Southern California Consortium for Data Science <a href="[https://www.lacc.edu/academics/aos/statistical-data-analytics](https://sites.google.com/view/socaldatasci/home)">here</a>.</p>
 
@@ -26,9 +26,12 @@
 
     <img src="https://drive.google.com/uc?export=view&id=1L3ELl9GdR32vkNmtL7mVLmy_wO8dDQKS" alt="QR Code" width="300" height="300" style="display: block; margin: 10px auto;" />
 
-    <p>🌱 I’m currently learning <strong>Machine Learning (ML), Deep Learning (DL), Artificial Intelligence (AI), and Amazon Web Services (AWS).</strong></p>
+    <p>🌱 Funded Project.</strong></p>
+    <div align="center">
+    <img src=" https://drive.google.com/file/d/15sVHGW2GogW-cGk2I_MbA9f89BY88RgH/view?usp=sharing" alt="Mathematics Faculty" width="500" />
+    </div>
+   
 
-    <p>⚡ Fun fact: The Aztecs developed a sophisticated number system that used dots (•) to represent 1, bars (—) for 5, and a symbol resembling a flag for 20. This vigesimal (base-20) system enabled complex calculations and accurate record-keeping for trade, astronomy, and engineering.</p>
 </div>
 
 <div align="center"> 
@@ -40,21 +43,10 @@
     </a>
 </div>
 
-<hr/>
-
-<h2 align="center">⚒️ Languages, Frameworks, and Tools ⚒️</h2>
-<br/>
-<div align="center">
-    <img src="https://skillicons.dev/icons?i=react,bootstrap,html,vscode,github,java,cpp,r,python" />
-</div>
-
-<br/>
-<hr/>
 
 <div align="center">
-    <h2>🐍 My Contributions 🐍</h2>
-    <br>
+    
     <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />
-    <br/><br/><br/>
+   
 </div>
 
