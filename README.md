@@ -10,23 +10,20 @@
     <img src="https://drive.google.com/uc?export=view&id=1GWkfaTIrSp0TRjDg9xziLrgPxgqF9O5d" alt="Mathematics Faculty" width="500" />
 </div>
 
-
 <br/>
 
 <div align="center">
-    🔭 The Southern California Consortium for Data Science (SCCDS) was established to develop and expand articulated pathways in data science that respond to opportunities in industry, are inclusive of students from a variety of backgrounds–particularly those not historically represented in STEM–and prepare students for success in the ever-widening variety of careers that utilize data science.**.
+    🔭 The Southern California Consortium for Data Science (SCCDS) was established to develop and expand articulated pathways in data science that respond to opportunities in industry, are inclusive of students from a variety of backgrounds—particularly those not historically represented in STEM—and prepare students for success in the ever-widening variety of careers that utilize data science.
 
-    Consortium goals include: 
+    <h4>Consortium goals include:</h4>
+    <ul>
+        <li>Creating new Introduction to Data Science courses at SCCDS-affiliated universities and community colleges that articulate across the Consortium.</li>
+        <li>Establishing outreach events to promote data science career exploration for students in grades 9-20 (e.g., Datathons, Data Science Careers Days).</li>
+        <li>Developing and implementing support initiatives for transfer students to ensure success in data science coursework (e.g., summer bridge programs, learning communities).</li>
+        <li>Developing and implementing professional development to equip faculty to teach data science, especially through the incorporation of best practices that are culturally relevant and inclusive, and strategies that are data-informed and promising for closing equity gaps.</li>
+    </ul>
 
-(1) Creating new Introduction to data science courses at SCCDS-affiliated universities and community colleges that articulate across the Consortium.
-
-(2) Establishing outreach events to promote DS career exploration for students in grades 9-20 (e.g. Datathons, Data Science Careers Days).
-
-(3) Developing and implementing support initiatives for transfer students to ensure success in DS coursework (e.g., summer bridge programs, learning communities). 
-
-(4) In addition, the Consortium will develop and implement professional development to equip faculty to teach DS, especially through incorporation of best practices that are culturally relevant and inclusive, and strategies that are data-informed and promising for closing equity gaps.
-
-    <h4>**Partner Campuses:**</h4>
+    <h4>Partner Campuses:</h4>
     <ul>
         <li>
             <strong>Math 217 - Fundamentals of Mathematical Programming</strong> (4 units; UC/CSU)
@@ -54,7 +51,7 @@
         </li>
     </ul>
 
-    <h4>**Spring - Year One:**</h4>
+    <h4>Spring - Year One:</h4>
     <ul>
         <li>Math 239 - Applied Data Science (4 units; UC/CSU)</li>
         <li>Math 279 - Linear Algebra for Data Science (4 units; UC/CSU)</li>
@@ -99,11 +96,3 @@
     <br/><br/><br/>
 </div>
 
-
-
-<div align="center">
-  <h2>🐍 My Contributions 🐍</h2>
-  <br>
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />
-  <br/><br/><br/>
-</div>
