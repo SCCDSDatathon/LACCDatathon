@@ -22,42 +22,10 @@
         <li>Developing and implementing support initiatives for transfer students to ensure success in data science coursework (e.g., summer bridge programs, learning communities).</li>
         <li>Developing and implementing professional development to equip faculty to teach data science, especially through the incorporation of best practices that are culturally relevant and inclusive, and strategies that are data-informed and promising for closing equity gaps.</li>
     </ul>
-
-    <h4>Partner Campuses:</h4>
-    <ul>
-        <li>
-            <strong>Math 217 - Fundamentals of Mathematical Programming</strong> (4 units; UC/CSU)
-            <br/>
-            **Fall 2024 Course Offering:**
-            <br/>
-            <strong>MATH 217</strong>
-            <ul>
-                <li>**Schedule:** Monday/Wednesday, 6:50 PM - 9:15 PM</li>
-                <li>**Format:** Synchronous, via Zoom</li>
-                <li>**Section Number:** 25437</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Math 229 - Statistics for Data Science</strong> (4 units; UC/CSU)
-            <br/>
-            **Fall 2024 Course Offering:**
-            <br/>
-            <strong>MATH 229</strong>
-            <ul>
-                <li>**Schedule 1:** Monday/Wednesday, 4:00 PM - 6:35 PM (Synchronous, via Zoom)</li>
-                <li>**Schedule 2:** Monday/Wednesday, 11:10 AM - 1:40 PM (Hyflex - in-person at FH 119 or online)</li>
-                <li>The **Hyflex** format allows students to choose between attending classes on campus or participating remotely, providing flexibility for their schedules.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h4>Spring - Year One:</h4>
-    <ul>
-        <li>Math 239 - Applied Data Science (4 units; UC/CSU)</li>
-        <li>Math 279 - Linear Algebra for Data Science (4 units; UC/CSU)</li>
-        <li>CIS 219 - Introduction to Oracle: SQL and PL/SQL (3 units; UC/CSU)</li>
-    </ul>
-
+<div align="center">
+   🙏 Partner Campuses:
+    <img https://drive.google.com/file/d/1jC9mbmqhLZ1zDUfJz8IA_W8NEkGide_n/view?usp=sharing
+       
     ❗ Information about **our certificate [here](https://www.lacc.edu/academics/aos/statistical-data-analytics)**
 
     📢 **"Unlock the world of numbers! Follow our Math Department on Instagram for important information on events, scholarships, fascinating facts, and even math jokes. Join us today and be part of the equation! Follow us on Instagram by visiting our [profile](https://www.instagram.com/lacc_math_department/) or scan the QR code below."**
