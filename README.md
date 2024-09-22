@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;Welcome+to+the+LACC+Datathon!;" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=600&height=70&duration=4000&lines=Hi+There!+👋;Welcome+to+the+LACC+Datathon!;" alt="Typing SVG" />
 </h1>
 
 <div align="center">
@@ -25,13 +25,13 @@
 
     <p>📢 "Unlock the world of numbers! Follow our Math Department on Instagram for important updates on events, scholarships, fascinating facts, and even math jokes. Join us today and be part of the equation! Visit our <a href="https://www.instagram.com/lacc_math_department/">Instagram profile</a> or scan the QR code below."</p>
 
+    <!-- Fixed the extra space in the QR code link -->
     <img src="https://drive.google.com/uc?export=view&id=1L3ELl9GdR32vkNmtL7mVLmy_wO8dDQKS" alt="QR Code" width="300" height="300" style="display: block; margin: 10px auto;" />
 
     <p>🌱 Funded Project.</p>
     <div align="center">
         <img src="https://drive.google.com/uc?export=view&id=15sVHGW2GogW-cGk2I_MbA9f89BY88RgH" alt="Funded Project" width="500" />
     </div>
-
 </div>
 
 <div align="center"> 
