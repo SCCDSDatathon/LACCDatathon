@@ -15,44 +15,12 @@
 <div align="center">
     <p>🔭 The Southern California Consortium for Data Science (SCCDS) was established to develop and expand articulated pathways in data science that respond to opportunities in industry. The consortium aims to be inclusive of students from diverse backgrounds, particularly those historically underrepresented in STEM, and prepare students for success in a variety of data science careers.</p>
 
-    <h4>Consortium Goals:</h4>
-    <ul>
-        <li>Creating new Introduction to Data Science courses that articulate across affiliated universities and community colleges.</li>
-        <li>Establishing outreach events to promote data science career exploration for students in grades 9-20 (e.g., Datathons, Data Science Careers Days).</li>
-        <li>Implementing support initiatives for transfer students (e.g., summer bridge programs, learning communities).</li>
-        <li>Equipping faculty to teach data science through professional development focused on culturally relevant and inclusive best practices.</li>
-    </ul>
+    <p> 🙏 Our Partner Campuses
 
-    <h4>Partner Campuses:</h4>
-    <ul>
-        <li>
-            <strong>Math 217 - Fundamentals of Mathematical Programming</strong> (4 units; UC/CSU)
-            <br><strong>Fall 2024 Course Offering:</strong>
-            <ul>
-                <li><strong>Schedule:</strong> Monday/Wednesday, 6:50 PM - 9:15 PM</li>
-                <li><strong>Format:</strong> Synchronous, via Zoom</li>
-                <li><strong>Section Number:</strong> 25437</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Math 229 - Statistics for Data Science</strong> (4 units; UC/CSU)
-            <br><strong>Fall 2024 Course Offering:</strong>
-            <ul>
-                <li><strong>Schedule 1:</strong> Monday/Wednesday, 4:00 PM - 6:35 PM (Synchronous, via Zoom)</li>
-                <li><strong>Schedule 2:</strong> Monday/Wednesday, 11:10 AM - 1:40 PM (Hyflex - in-person at FH 119 or online)</li>
-                <li>The <strong>Hyflex</strong> format allows students to choose between attending on campus or participating remotely, providing flexibility.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h4>Spring - Year One:</h4>
-    <ul>
-        <li>Math 239 - Applied Data Science (4 units; UC/CSU)</li>
-        <li>Math 279 - Linear Algebra for Data Science (4 units; UC/CSU)</li>
-        <li>CIS 219 - Introduction to Oracle: SQL and PL/SQL (3 units; UC/CSU)</li>
-    </ul>
-
-    <p>❗ Information about our certificate can be found <a href="https://www.lacc.edu/academics/aos/statistical-data-analytics">here</a>.</p>
+<div align="center">
+    <img src="https://drive.google.com/uc?export=view&id=1GWkfaTIrSp0TRjDg9xziLrgPxgqF9O5d"] alt="Mathematics Faculty" width="500" />
+</div>
+    <p>❗ Information about the Southern California Consortium for Data Science <a href="[https://www.lacc.edu/academics/aos/statistical-data-analytics](https://sites.google.com/view/socaldatasci/home)">here</a>.</p>
 
     <p>📢 "Unlock the world of numbers! Follow our Math Department on Instagram for important updates on events, scholarships, fascinating facts, and even math jokes. Join us today and be part of the equation! Visit our [Instagram profile](https://www.instagram.com/lacc_math_department/) or scan the QR code below."</p>
 
@@ -64,10 +32,10 @@
 </div>
 
 <div align="center"> 
-    <a href="mailto:pinedaem@laccd.edu">
+    <a href="mailto:info@socaldatasci.org">
         <img src="https://img.shields.io/badge/Email-333333?style=for-the-badge&logo=gmail&logoColor=red" />
     </a>
-    <a href="https://linkedin.com/in/edward-pineda-castro-b163b7119" target="_blank">
+    <a href="https://calearninglab.org/project/southern-california-consortium-for-data-science/" target="_blank">
         <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
     </a>
 </div>
