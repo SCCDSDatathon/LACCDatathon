@@ -16,7 +16,7 @@
     <p>🔭 The Southern California Consortium for Data Science (SCCDS) was established to develop and expand articulated pathways in data science that respond to opportunities in industry. The consortium aims to be inclusive of students from diverse backgrounds, particularly those historically underrepresented in STEM, and prepare students for success in a variety of data science careers.</p>
 </div>
 
-<p>🙏 Our Partner Campuses</p>
+<p>🙏 Our Partner Campuses:</p>
 
 <div align="center">
     <img src="https://drive.google.com/uc?export=view&id=1jC9mbmqhLZ1zDUfJz8IA_W8NEkGide_n" alt="Partner Campuses" width="500" />
@@ -24,9 +24,9 @@
 
 <p>❗ Information about the Southern California Consortium for Data Science <a href="https://sites.google.com/view/socaldatasci/home">here</a>.</p>
 
-<p>🌱 Funded Project.</p>
+<p>🌱 Special Thanks to our Funded Project: California Educational Learning Lab</p>
 <div align="center">
-    <img src="https://drive.google.com/uc?export=view&id=15sVHGW2GogW-cGk2I_MbA9f89BY88RgH" alt="Funded Project" width="500" />
+    <img src="https://drive.google.com/uc?export=view&id=15sVHGW2GogW-cGk2I_MbA9f89BY88RgH" alt="Funded Project by California Educational Learning Lab" width="500" />
 </div>
 
 <div align="center"> 
